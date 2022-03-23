@@ -1,0 +1,245 @@
+
+body{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+
+
+:root{
+
+    // ## Colors
+// ### Theme 1
+
+// #### Backgrounds
+
+--Very_dark_desaturated_blue : hsl(222, 26%, 31%);
+--Very_dark_desaturated_blue : hsl(223, 31%, 20%);
+--Very_dark_desaturated_blue : hsl(224, 36%, 15%);
+
+// #### Keys
+
+--Desaturated_dark_blue : hsl(225, 21%, 49%);
+--Desaturated_dark_blue : hsl(224, 28%, 35%);
+
+--Red : hsl(6, 63%, 50%);
+--Dark_red : hsl(6, 70%, 34%);
+
+--Light_grayish_orange : hsl(30, 25%, 89%);
+--Grayish_orange : hsl(28, 16%, 65%);
+
+// #### Text
+
+--Very_dark_grayish_blue: hsl(221, 14%, 31%);
+--White: hsl(0, 0, 100%);
+
+// ### Theme 2
+
+// #### Backgrounds
+
+--Light_gray : hsl(0, 0%, 90%);
+--Grayish_red : hsl(0, 5%, 81%);
+--Very_light_gray : hsl(0, 0%, 93%);
+
+// #### Keys
+
+--Dark_moderate_cyan : hsl(185, 42%, 37%);
+--Very_dark_cyan : hsl(185, 58%, 25%);
+
+--Orange : hsl(25, 98%, 40%);
+--Dark_orange : hsl(25, 99%, 27%);
+
+--Light_grayish_yellow : hsl(45, 7%, 89%);
+--Dark_grayish_orange : hsl(35, 11%, 61%);
+
+// #### Text
+
+--Very_dark_grayish_yellow: hsl(60, 10%, 19%);
+--White : hsl(0, 0, 100%);
+
+// ### Theme 3
+
+// #### Backgrounds
+
+--Very_dark_violet : hsl(268, 75%, 9%);
+--Very_dark_violet : hsl(268, 71%, 12%);
+
+// #### Keys
+
+--Dark_violet : hsl(281, 89%, 26%);
+--Vivid_magenta : hsl(285, 91%, 52%);
+
+--Pure_cyan : hsl(176, 100%, 44%);
+--Soft_cyan : hsl(177, 92%, 70%);
+
+--Very_dark_violet : hsl(268, 47%, 21%);
+--Dark_magenta : hsl(290, 70%, 36%);
+
+// #### Text
+
+--Light_yellow: hsl(52, 100%, 62%);
+--Very_dark_blue: hsl(198, 20%, 13%);
+--White : hsl(0, 0, 100%);
+}
+
+// End of Root  -------------------------
+
+#calculator_id{
+    background-color: var(--Desaturated_dark_blue);
+    width: fit-content;
+    padding: 2rem;
+    color: white;
+}
+
+
+.theme_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+      
+}
+
+.switch{
+    background-color: var(--Very_dark_desaturated_blue);
+    border:none;
+    width: 74px;
+    padding: .12rem 0rem;
+    border-radius: 30px;
+    margin-right: -3.6rem;
+    // #checkbox_one{
+    //    color: red;
+    // }
+       
+     #checkbox_two{
+         display: none;
+     }
+     #checkbox_three{
+         display: none;
+     }
+}
+
+.switch_div{
+    width: 266px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+     #h3{
+           color: white;
+           font-family: 'Spartan', sans-serif;
+           font-size: 32px;
+       }
+    
+}
+
+
+
+
+button{
+    padding: 1.7rem;
+     width: 20px;
+     height: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: 'Spartan', sans-serif;
+     font-size: 16px;
+     margin: 5px;
+    box-shadow: 0 1.5px 3px black;
+    background-color: white;
+    border-radius: 5px ;
+}
+
+#screen{
+    padding: 1.5rem 3.90rem;
+    margin: 1rem 0rem 1rem 0rem;
+    border: none;
+    background-color: var(--Very_dark_violet);
+    border-radius: 2px;
+    font-family: 'Spartan', sans-serif;
+    color: white;
+    display: none;
+}
+
+#Display-area{
+    padding: 1.5rem 3.90rem;
+    margin: 1rem 0rem 1rem 0rem;
+    border: none;
+    background-color: var(--Very_dark_violet);
+    border-radius: 2px;
+    font-family: 'Spartan', sans-serif;
+    color: white;
+    text-align: right;
+    overflow: hidden;
+}
+
+.answerScreen{
+    overflow: hidden;
+    width: 12rem;
+}
+
+table{
+    background-color:var(--Very_dark_desaturated_blue);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+// Buttons  
+
+#del{
+background-color: var(--Dark_magenta);
+color: white;
+border-top-width:0px ;
+border-left-width:0px ;
+border-right-width:0px ;
+padding-right:2rem ;
+}
+
+#reset{
+ background-color: var(--Dark_magenta);
+color: white;
+border-top-width:0px ;
+border-left-width:0px ;
+border-right-width:0px ;
+}
+
+#equal{
+    background-color: var(--Dark_red);
+    color: white;
+    border-color: var(--Dark_red);
+    padding-right: 11rem;
+}
+
+#reset_equal_id{
+    border-radius: 0px 0px 5px 5px ;
+    margin-top: -20px;
+}
+
+.switch_circle{
+    width: 10px;
+    height: 10px;
+    background-color: var(--Red);
+    border-radius: 50%;
+    padding:3px;
+    margin: 4px 6px ;
+}
+
+  .pressedBtn{
+    transform:scale(1.1);
+  }
+
+  .num_btn{
+      background-color: white;
+  }
+// ----------------------------------------//   THEME 2 
+
+// #switch_circle_id{
+
+// }
+
+// .calculator_Theme_two{
+//     background-color: var(--White);
+//     width: fit-content;
+//     padding: 2rem;
+// }
